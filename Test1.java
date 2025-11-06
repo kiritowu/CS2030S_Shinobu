@@ -95,6 +95,9 @@ class Test1 {
         () -> {
           Potion p = new Potion("Focus", 1);
           Potion q = p.dilute(999);                            
+          System.out.println(p.getStrength() == 1);
+          System.out.println(q.getStrength() == 1);
+
           return q == p && q.getStrength() == 1 && p.getStrength() == 1;
         },
         true);

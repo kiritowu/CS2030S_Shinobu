@@ -29,6 +29,7 @@ public class Test5 {
         .map(i -> potionsB[i]);
 
     List<Potion> outB = Task5.splitStrongPotions(listB).limit(2).toList();
+    System.out.println(outB);
 
     we.expect(
         "Test B: Odd split 5 -> 3,2; sum preserved",
